@@ -1,0 +1,12 @@
+# Terraform state — never commit, contains sensitive AWS identifiers
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+
+# Local Terraform variable overrides
+terraform/*.tfvars
+terraform/*.tfvars.json
+
+# Claude local settings (contains AWS credentials/region)
+.claude/settings.local.json
