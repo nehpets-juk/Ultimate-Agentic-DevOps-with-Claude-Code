@@ -8,5 +8,8 @@ terraform/.terraform.lock.hcl
 terraform/*.tfvars
 terraform/*.tfvars.json
 
+# Partial backend config — contains sensitive values (bucket name, region)
+terraform/backend.hcl
+
 # Claude local settings (contains AWS credentials/region)
 .claude/settings.local.json
