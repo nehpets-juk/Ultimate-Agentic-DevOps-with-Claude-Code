@@ -56,7 +56,7 @@ data "aws_iam_policy_document" "github_actions_permissions" {
 
   statement {
     effect    = "Allow"
-    actions   = ["cloudfront:CreateInvalidation"]
+    actions   = ["cloudfront:CreateInvalidation","cloudfront:ListDistributions"]
     resources = [aws_cloudfront_distribution.site.arn]
   }
 }
